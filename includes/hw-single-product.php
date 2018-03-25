@@ -14,10 +14,22 @@ function HookyWoo_after_short_description_content() {
 	echo '<div class="hw-after-short-description">' . get_option( 'after_short_description' ) . '</div>';
 }
 
+//Add content before Variations
+add_action( 'woocommerce_before_variations_form', 'HookyWoo_before_variations_content' );
+function HookyWoo_before_variations_content() {
+	echo '<div class="hw-before-variations">' . get_option( 'before_variations_content' ) . '</div>';
+}
+
 //Add content after Add to Cart button
 add_action( 'woocommerce_after_add_to_cart_button', 'HookyWoo_after_add_to_cart_content' );
 function HookyWoo_after_add_to_cart_content() {
 	echo '<div class="hw-after-cart">' . get_option( 'after_add_to_cart_button' ) . '</div>';
+}
+
+//Add content after Variations
+add_action( 'woocommerce_after_variations_form', 'HookyWoo_after_variations_content' );
+function HookyWoo_after_variations_content() {
+	echo '<div class="hw-after-variations">' . get_option( 'after_variations_content' ) . '</div>';
 }
 
 //Add content before Product Meta
@@ -43,3 +55,24 @@ add_action( 'woocommerce_after_single_product', 'HookyWoo_after_product_content'
 function HookyWoo_after_product_content() {
 	echo '<div class="hw-after-product">' . get_option( 'after_product_content' ) . '</div>';
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

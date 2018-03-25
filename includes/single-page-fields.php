@@ -16,8 +16,20 @@ $fields = array(
     'type' => 'textarea',
   ),
   array(
+    'uid' => 'before_variations_content',
+    'label' => 'Before Varitions Section',
+    'section' => 'single_product_page_section',
+    'type' => 'textarea',
+  ),  
+  array(
     'uid' => 'after_add_to_cart_button',
     'label' => 'After Add to Cart button',
+    'section' => 'single_product_page_section',
+    'type' => 'textarea',
+  ),
+  array(
+    'uid' => 'after_variations_content',
+    'label' => 'After Variations',
     'section' => 'single_product_page_section',
     'type' => 'textarea',
   ),

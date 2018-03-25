@@ -4,6 +4,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 $fields = array(
   array(
+    'uid' => 'before_shop_page_content',
+    'label' => 'Before Shop Page Main Content',
+    'supplemental' => '*This text WILL appear outside of the page content',
+    'section' => 'shop_archive_page_section',
+    'type' => 'textarea',
+  ),
+  array(
     'uid' => 'shop_page_description',
     'label' => 'Shop Page Description',
     'section' => 'shop_archive_page_section',

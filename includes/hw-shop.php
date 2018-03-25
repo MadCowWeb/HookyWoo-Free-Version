@@ -2,6 +2,10 @@
 if ( ! defined( 'ABSPATH' ) ) {
     exit; // Exit if accessed directly
 }
+add_action( 'woocommerce_before_main_content', 'HookyWoo_before_shop_page_content' );
+function HookyWoo_before_shop_page_content() {
+	echo '<div class="hw-before-shop-page-content">' . get_option( 'before_shop_page_content' ) . '</div>';
+}
 /*Add content below Shop title 
 ** Other default Woo Hooks using woocommerce_archive_description
 woocommerce_taxonomy_archive_description', 10 
