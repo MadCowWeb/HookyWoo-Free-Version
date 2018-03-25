@@ -8,7 +8,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Description: WYSIWYG Editor for WooCommerce Hooks
  * Author: Jason Robie
  * Author URI: https://ridgeviewtechnology.com/
- * Version: 1.4.0
+ * Version: 1.4.5
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -122,14 +122,15 @@ class HookyWoo_Plugin {
   }
 
   public function field_callback( $arguments ) {
+    // $value = get_option( $arguments['uid'] );
+    // if( ! $value ) {
+    //     $value = $arguments['default'];
+    // }
     $value = get_option( $arguments['uid'] );
-    if( ! $value ) {
-        $value = $arguments['default'];
-    }
     switch( $arguments['type'] ){
         case 'text':
         case 'textarea':
-            printf( '<textarea name="%1$s" id="%1$s" placeholder="%2$s" rows="3" cols="50">%3$s</textarea>', $arguments['uid'], $arguments['placeholder'], $value );
+            printf( '<textarea name="%1$s" id="%1$s" rows="3" cols="50">%2$s</textarea>', $arguments['uid'], $value );
             break;
     }
     if( $helper = $arguments['helper'] ){
