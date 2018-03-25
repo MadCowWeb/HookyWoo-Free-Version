@@ -4,8 +4,8 @@ Tags: Hooks, WooCommerce, Woo, Woo Commerce, Actions, Filters
 License: GNU GENERAL PUBLIC LICENSE
 License URI: http://fsf.org/
 Requires at least: 3.0.1
-Tested up to: 4.9.4
-Stable tag: 1.4.0
+Tested up to: 4.8.2
+Stable tag: 1.4.5
 Requires PHP: 5.2.4
 
 A WYSIWYG solution for adding content to the majority of all WooCommerce Action Hooks.
@@ -25,8 +25,7 @@ All hook divs have their own class so you can update the CSS however you need to
 Use your browser's inspector to locate the classes for the specific div in which that hook is contained and add your own styling to the content.
 The "after cart" and "before product tabs" divs are both set to clear:all; for basic layout reasons. Those, and all others, can be over ridden in your own theme's stylesheet.
 
-Includes "Shop/Archive" , "Single Product" Hooks.
-For PRO Version (includes Checkout and Cart pages), please visit <a href="https://ridgeviewtechnology.com/product/hookywoo-woocommerce-hooks-customizer">RidgeView Technology</a>
+Includes "Shop/Archive" , "Single Product", "Cart" and "Checkout" Hooks.
 
 <a href="https://ridgeviewtechnology.com/about-ridgeview-technology" target="_blank">Contact Us</a>
 == Installation ==
@@ -54,7 +53,10 @@ No. The data is stored safely in the database. Just remove the Standard Plugin a
 = 1.1.0 =
 * Added tabbed function to better separate page sections
 * Updated readme file with more instructions
-
-a
-= 1.4.1 =
-* Core code update, Verify functionality with latest WooCommerce Updates
+= 1.3.0 =
+* Included Cart and Checkout pages
+== Upgrade Notice ==
+1.3.0
+Including cart and checkout pages
+= 1.4.5 =
+fix php errors for empty indexes on empty fields
